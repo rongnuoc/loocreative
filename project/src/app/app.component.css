@@ -1,0 +1,412 @@
+:host {
+    --blue: #1e90ff;
+    --white: #ffffff;
+    --font-color: #333;
+    --dark-background: #101010;
+    --yellow-background: #FCD32A;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 14px;
+    color: var(--dark);
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 8px 0;
+}
+
+ h2 {
+    font-size: 40px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: bold;
+}
+
+p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.spacer {
+    flex: 1;
+}
+
+.toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: var(--dark-background);
+    color: var(--white);
+    font-weight: 600;
+}
+
+.content {
+    display: flex;
+    margin: 60px 0px 32px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul {
+    list-style: none !important;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+footer {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    line-height: 20px;
+    flex-wrap: wrap;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 767px) {
+    .introduce-content {
+        width: 80% !important;
+        padding: 40px !important;
+    }
+
+    .menu {
+      flex-direction: column;
+    }
+    
+    .board-brand-story {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .col-6 {
+        width: 100% !important;
+    }
+
+    .button-toggle {
+        display: block !important;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .process {
+        flex-direction: column;
+    }
+
+    .process {
+        align-items: center;
+    }
+
+    .process > div {
+        width: 40%;
+        justify-content: center;
+        margin: 10px 10px;
+    }
+
+    .title-banner {
+        font-size: 28px !important;
+    }
+
+    .icon-arrow {
+        display: none;    
+    }
+
+    .icon-arrow-reative {
+        display: block !important;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-toggle {
+    margin-top: auto;
+}
+
+.list-menu {
+    background-color: var(--dark-background);
+}
+
+.menu > li {
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.button-toggle {
+  text-align: right;
+  margin-top: 20px !important;
+  margin-bottom: 20px;
+  padding: 0px 5px;
+  cursor: pointer;
+  display: none;
+}
+
+.menu > li:hover {
+    color: #e6ebf1;
+}
+
+.new-event {
+    background-color: #E94815;
+}
+
+.container {
+    width: fit-content;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.d-contents {
+    display: contents
+}
+
+.new-event {
+    height: 70vh;
+}
+
+.introduce {
+    background-color: #0E54B0;
+    height: auto;
+} 
+
+.best-product, .happened-issue {
+    background-color: var(--yellow-background);
+    height: auto;
+}
+
+.best-product {
+    color: #F76308;
+}
+
+.image-banner {
+    max-height: 80%;
+    max-width: 90%;
+    width: 900px;
+}
+
+.process {
+    justify-content: center;
+    padding-top: 25px;
+}
+
+.title-banner {
+    font-weight: 600;
+    font-size: 40px;
+    font-style: italic;
+    padding: 30px 0px;
+}
+
+.subtitle-banner {
+    justify-content: center;
+}
+
+.button-info {
+    border: 2px solid #333;
+    border-radius: 20px;
+}
+
+.process ::ng-deep h4 {
+    padding: 0px 5px;
+}
+
+.name-launching {
+    margin-left: 20px;
+    border-top: #333 2px solid;
+    border-bottom: #333 2px solid;
+}
+
+.button-info:hover, .name-launching:hover {
+    color: #eeeeee;
+    cursor: pointer;
+    border-color: #eeeeee;
+}
+
+.icon-arrow {
+    font-size: 40px;
+    margin: 0px 10px ;
+}
+
+.icon-arrow-reative {
+    display: none;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.m-l-20 {
+    margin-left: 20px;
+}
+
+.p-d-10 {
+    padding: 10px;
+}
+
+.p-b-10 {
+    padding-bottom: 10px;
+}
+
+.p-b-20 {
+  padding-bottom: 20px;
+}
+
+.p-t-25 {
+    padding-top: 25px;
+}
+
+.introduce-content {
+    width: 500px;
+    text-align: justify;
+    padding: 40px 70px;
+    color: var(--white);
+}
+
+.subtitle-banner-content {
+    width: 500px;
+}
+
+.best-product-content {
+    padding-top: 100px;
+}
+
+.top-product-tag {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: var(--yellow-background);
+    border: #333 1px dashed;
+}
+
+.top-product-tag > p {
+    width: auto;
+    height: inherit;
+    padding-top: 8px;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.decription-product {
+    width: auto;
+    display: flex; 
+    justify-content: center;
+}
+
+.decription-product ::ng-deep p {
+    width: 150px;
+}
+
+.decription-product-content {
+    background-color: var(--white);
+    margin: -40px 0px 0px;
+    padding: 2px 10px;
+    text-align: left;
+}
+
+.button-go {
+    background-color: var(--dark-background);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    color: var(--white);
+    text-align: center;
+}
+
+.product {
+    width: fit-content;
+}
+
+.board-brand-story {
+    width: 70%;
+    height: fit-content;
+}
+
+.colaboration {
+    background-color: #F76308;
+}
+
+.story-board {
+    background-color: var(--white);
+}
+
+.story-board > p {
+    text-align: left;
+    padding: 10px;
+}
+
+.button-see-more {
+    border:black 2px solid;
+    width: fit-content;
+    padding: 0px 25px;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.button-see-more :hover {
+    font-size: 20px;
+}
+
+.final-banner ::ng-deep img {
+    width: 80vw;
+}
+
+.list-product {
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-detail {
+    padding: 20px 0px;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    min-width: 250px;
+}
+
+.price-product {
+    width: initial;
+    justify-content: space-between;
+}
+
+.favorite-icon {
+    color: lightsalmon;
+}
+
+.image-calaboration {
+    width: initial;
+    width: 80%;
+}
