@@ -10,7 +10,7 @@ export class AppComponent {
   title = 'project';
 
   public menu: string[] = ["INTRODUCTION", "SOLUTION", "RATE PLAN", "LOG IN", "APPLY FOR FREE USE"];
-  toggle = true;
+  public toggle = true;
 
   public data = {
     bestProduct: [

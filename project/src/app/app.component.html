@@ -8,11 +8,11 @@
         <div class="button-toggle" (click)="toggle=!toggle">
             <mat-icon class="favorite-icon">reorder</mat-icon>
         </div>
-        <div class="list-menu" *ngIf="toggle">
+        <div class="list-menu" [ngClass]="toggle ? 'active' : 'non-active'">
             <ul class="menu">
-              <li *ngFor="let item of menu">
-                <h4>{{ item }}</h4>
-              </li>
+                <li *ngFor="let item of menu">
+                    <h4>{{ item }}</h4>
+                </li>
             </ul>
         </div>
     </div>
@@ -149,6 +149,7 @@
                 </li>
             </ul>
         </div>
+        <div class="spacer"></div>
         <div>
             <ul>
               <h4>About us</h4>
@@ -160,6 +161,14 @@
         <div>
             <ul>
               <h4>My order</h4>
+                <li *ngFor="let item of menu">
+                    <p>{{ item }}</p>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+              <h4>My account</h4>
                 <li *ngFor="let item of menu">
                     <p>{{ item }}</p>
                 </li>
